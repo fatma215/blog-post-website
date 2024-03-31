@@ -134,7 +134,7 @@ a{
         font-size: medium;
     }
 }
-@media screen and  (min-width : 756px) and (max-width : 13660px) {
+@media screen and  (min-width : 756px) and (max-width : 1000px) {
     .main{
         grid-template-columns : auto auto;
     }

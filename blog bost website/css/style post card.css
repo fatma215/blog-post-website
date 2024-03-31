@@ -1,0 +1,124 @@
+ @import url(home_page_style.css);
+ .container {
+        display: grid; 
+        grid-template-columns: 1.4fr 0.9fr 0.7fr; 
+        grid-template-rows: 0.3fr 1.6fr 2.5fr 0.3fr ;
+        grid-template-areas: 
+          "hd hd hd"
+          "article article authour"
+          "article article ad"
+          "sh sh sh"
+          "ft ft ft"; 
+        grid-gap: 8px;
+        background-color: rgb(198, 198, 198);
+        border: black 2px solid;
+        padding: 10px;
+ }
+.container > div{
+    border: 1px solid black; 
+}
+.hd {
+  grid-area: hd;
+  height: 110PX;
+  padding-top: 30px; 
+}
+.article { grid-area: article; }
+.authour { grid-area: authour; }
+.ad { grid-area: ad; }
+.share{
+   grid-area: sh;
+   display: flex;
+   justify-content: row;
+   gap: 20px;
+   font-size:larger;
+   padding: 20px;
+   background-color: rgb(162, 162, 255);
+  }
+.footer{grid-area: ft;}
+img{
+  height: 400px;
+  width: 99.5%;
+  border: 2px solid black;  
+}
+.logo{
+  margin-left: 50%;
+  height:20px;
+  width: 20px;
+}
+h3{
+  text-align: center;
+  padding: 20px;
+  color: rgb(253, 252, 255);
+  background-color: rgb(10, 34, 145);
+  border: 1px black dotted;
+}
+#button2{
+  margin: 50px;
+  margin-right: 30px;
+  padding-top: 10px;
+}
+.img_writer{
+  margin-top: 20px ;
+  margin-left: 25%;
+  width: 50%;
+  border: 2px solid black;
+  height: 250px;
+  border-radius: 200px;
+}
+.writer{
+  font-size: large;
+}
+.article > p{
+  font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  padding: 10px ;
+}
+.logo{
+  height: 30px;
+  width: 30px;
+}
+@media screen and (min-width : 350px) and (max-width : 755px) {
+  .container{
+    grid-template-columns: auto; 
+    grid-template-rows: auto  ;
+    grid-template-areas: 
+    "hd "
+    "authour"
+    "article"
+    "ad"
+    "sh "
+    "ft";
+  }
+  .hd{
+    height: fit-content;
+  }
+  .footer{
+     font-size: x-small;
+  }
+  .nav_bar ul{
+      font-size: small;
+  }
+}
+@media screen and  (min-width : 756px) and (max-width : 13660px) {
+  .container{
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto  ;
+    grid-template-areas: 
+    "hd hd hd "
+    "article article authour"
+    "article article ad"
+    "sh sh sh "
+    "ft ft ft";
+  }
+  .hd{
+    height: fit-content;
+  }
+  .footer{
+     font-size:large;
+  }
+  .nav_bar ul{
+      font-size:large;
+  }
+}
+   
+

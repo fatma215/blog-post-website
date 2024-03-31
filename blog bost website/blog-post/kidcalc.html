@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_kidcalc.css">
+    <title>kidcalk</title>
+</head>
+<body>
+    <nav class="nav_bar" >
+        <ul >
+         <li><a href="#logo"><img class="icon" src="../imges/blogging.png" alt="404"></a></li>
+         <li><a href="#About" >About</a></li>
+         <li><a href="#Contact" >Contact</a></li>
+         <li><a href="../blog-post/home_page.html" >Home</a></li>
+         <li><a href="../blog-post/kidcalc.html">kidcalk</a></li>
+        </ul>  
+       </nav>
+<div class="content">  
+<div class="login" >
+        <form class="form">
+            <h1><center>Log In</center></h1><br>
+            <label>Name:</label><br>
+            <input id="name" type="text" placeholder="Enter name"><br>
+            <label>Age:</label><br>
+            <input type="text" placeholder="Enter age"><br>
+            <label>Theme</label><br>
+            <select id="themeSelector" onchange="changeTheme()" onfocus="this.size=3;" onblur="this.size=0;" onchange="this.size=1; this.blur()">
+                <option value="space">Space</option>
+                <option value="natural">Natural</option>
+                <option value="sea">sea</option>
+            </select><br>
+            <center><input id="submitBtn" class="submit" type="submit" value="Submit"></center>
+        </form>
+    </div>
+<div class='wrabber'>     
+   <div>         
+     <div class="text"><mark>kidcalc here <br>Use it now! </mark></div> 
+</div>       
+    <div class="kidcalc">
+       <input class="screen"  type="text" name="display">
+       <div class="screen"  id="answer"></div>
+       <div class="numbers">
+        <input  type="button" value="7" >
+        <input  type="button" value="8" >
+        <input  type="button" value="9" >
+        <input  type="button" value="0" >
+        <input  type="button" value="4" >
+        <input  type="button" value="5" >
+        <input  type="button" value="6" >
+        <input id="operition"  type="button" value="+">
+        <input  type="button" value="3">
+        <input  type="button" value="2">
+        <input  type="button" value="1">
+        <input id="operition"  type="button" value="-">
+        <input id="operition"  type="button" value="<">
+        <input id="operition"  type="button" value=">">
+        <input id="operition"  type="button" value="=">
+        <input id="operition"  type="button" value="C">       
+    </div>
+ </div>    
+</div>
+<div class="information_bar">
+    Hello, <em>your name</em>&#160&#160&#160&#160 Your score is : 0
+</div>
+<footer class="footer">
+    <div>Copyright 2024 , All rights reserved </div>
+    <div>Code By Fatma Ahmed</div>
+</footer>
+<script>
+    function changeTheme() {
+            let themeSelector = document.getElementById("themeSelector");
+            let selectedTheme = themeSelector.value;
+            let oldLink = document.getElementById("themeCSS");
+            if (oldLink) {
+                oldLink.remove();
+            }
+            let newLink = document.createElement("link");
+            newLink.rel = "stylesheet";
+            newLink.href = "../css/" + selectedTheme + "-theme.css";
+            newLink.id = "themeCSS";
+            document.head.appendChild(newLink);
+        }
+        document.getElementById("submitBtn").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            changeTheme(); 
+        });
+</script>
+     
+</body>
+</html>

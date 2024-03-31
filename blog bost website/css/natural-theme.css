@@ -1,0 +1,46 @@
+.login{
+    background-image: url('../imges/flowers.jpg' );
+    background-size:100% 100% ;
+    background-attachment: fixed;
+}
+.nav_bar ul{
+    background-color: rgb(255, 185, 7);
+}
+.form{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 0px 0px beige;
+}
+.wrabber{
+    background-image: url(../imges/natural.jpg) ;
+    background-attachment: fixed;
+}
+.kidcalc {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.text mark{
+    background-color:rgba(255, 185, 7, 0.496) ;
+}
+.kidcalc .screen {
+    background-color: rgba(255, 255, 255, 0.512);
+}
+.kidcalc .numbers input[type="button"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+}
+.kidcalc .numbers input[type="button"]:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#operition{
+    background-color:  rgb(0, 141, 42) ;
+}
+#operition:hover{
+    background-color:rgb(16, 49, 3) ;
+}
+.footer{
+    background-color:rgb(255, 185, 7) ;
+    color: black;
+}
+.information_bar{
+    background-color:rgb(0, 141, 42) ;
+   
+}

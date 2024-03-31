@@ -1,0 +1,141 @@
+@import url(home_page_style.css);
+.login{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(320deg, rgb(197, 179, 222),rgb(114, 131, 186),blue);   
+    border: 1px solid black;
+}
+.form{
+    width: 250px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color:  rgb(5, 26, 120);
+    height: 340px;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-shadow: 3px 5px 5px 5px black;
+}
+.form  > input{
+    width: 90%;
+}
+.form  > select{
+    width: 90%;
+}
+.submit{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 70px;
+    padding: 5px;
+}
+option:nth-child(1):hover{
+    background-color: blue;
+}
+option:nth-child(2):hover{
+    background-color: greenyellow;
+}
+option:nth-child(3):hover{
+    background-color: yellow;
+}
+.wrabber{
+    padding: 20px;
+    background-size:cover;
+    background-image: url(../imges/andrew-ridley-jR4Zf-riEjI-unsplash.jpg);
+}
+.text{
+    text-align: center;
+    display: block;
+    padding: 5%;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: rgb(6, 6, 44);
+}
+.text mark{
+   background-color: rgba(13, 13, 141, 0.781);
+}
+.kidcalc{ 
+    border: 2px solid black;
+    height: 500px;
+    width: 450px;
+    background-color: rgb(19, 30, 116);
+    box-shadow: 3px 5px 5px 5px black;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin: 0 auto;
+}
+.screen{
+    background-color: rgb(202, 246, 255);
+    border: 1px solid black;
+    border-radius: 24px;
+    width: 85%;
+    height: 35px;
+    margin: 30px;
+    box-shadow: 3px 5px black;
+}
+.numbers {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content:space-between;
+    padding:20px;
+    gap: 20px;   
+}
+.numbers > input{
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background:rgb(54, 225, 255) ;
+    box-shadow: 3px 5px black;
+    font-size: x-large;
+}
+.numbers > input:hover {
+    background-color: rgb(22, 31, 31);
+    color: white;
+} 
+.numbers > input:active{
+    background-color: rgb(70, 80, 84);
+}
+#operition{
+    background-color: orangered;
+} 
+#operition:active{
+    background-color: hsl(35, 100%,55%);
+}
+.information_bar{
+    text-align: center;
+    padding-top:20px ;
+    padding-bottom: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(202, 246, 255);
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+@media screen and (min-width : 350px) and (max-width : 755px) {
+.nav_bar ul{
+   font-size: smaller; 
+   padding-right:20px ; 
+   font-weight: 400;  
+}
+.text mark{
+       font-size:50px;
+    }    
+.kidcalc{ 
+    height: 500px;
+    width: 80%;
+}
+.information_bar{
+    font-size: large;
+    font-weight: 700;
+}
+.footer{
+    font-size: smaller;
+}
+}    
+
+
